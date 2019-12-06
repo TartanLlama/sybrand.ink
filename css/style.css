@@ -1,0 +1,17 @@
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
+main {
+    text-align: center;
+    padding: 30px;
+}
+
+#inner {
+    text-align: left;
+    display: inline-block;
+}
+
+.published {
+    font-size: small;
+}
