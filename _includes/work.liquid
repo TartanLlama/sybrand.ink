@@ -1,0 +1,12 @@
+---
+layout: default.liquid
+---
+
+<h1>{{title}}</h1>
+<h2 class="published">Published in <a href="{{where-url}}">{{where}}</a>
+{% if issue %}
+- {{issue}}
+{% endif %}
+</h2>
+
+{{ content | safe }}

@@ -1,0 +1,40 @@
+---
+layout: default.liquid
+---
+
+<h1>Sy Brand</h1>
+
+<h2>Bio</h2>
+<p>Sy is a queer non-binary person living in Edinburgh, Scotland.</p>
+<p>They write through the haze of cat-/child-induced sleep deprivation to try and make sense of gender, relationships, and ADHD.</p>
+<p>You can find them on Twitter <a href="https://twitter.com/tartanllama">@TartanLlama</a>.</p>
+
+<h2>Publications</h2>
+<h3>2019</h3>
+
+<ul>
+{% for work in collections.19 %}
+<li>
+    {% if work.data.here %}
+    <i><a href="{{work.url}}">{{work.data.title}}</a></i>,
+    {% elsif work.data.work-link %}
+    <i><a href="{{work.data.work-link}}">{{work.data.title}}</a></i>,
+    {% else %}
+    <i>{{work.data.title}}</i>,
+    {% endif %}
+    <a href={{work.data.where-url}}>{{work.data.where}}</a>
+    {% if work.data.issue %}
+        , {{work.data.issue}}
+    {% endif %}
+    {% if work.data.upcoming %}
+        <i>(upcoming)</i>
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>
+
+<h2>Other Activities</h2>
+<ul>
+<li>Editor of <a href="https://code-art.xyz/">code::art</a>.</li>
+<li>Co-editor of <a href="https://trashheap.party">trashheap zine</a>.</li>
+</ul>
