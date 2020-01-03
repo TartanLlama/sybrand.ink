@@ -10,6 +10,30 @@ layout: default.liquid
 <p>You can find them on Twitter <a href="https://twitter.com/tartanllama">@TartanLlama</a>.</p>
 
 <h2>Publications</h2>
+
+<h3>2020</h3>
+
+<ul>
+{% for work in collections.20 %}
+<li>
+    {% if work.data.here %}
+    <i><a href="{{work.url}}">{{work.data.title}}</a></i>,
+    {% elsif work.data.work-link %}
+    <i><a href="{{work.data.work-link}}">{{work.data.title}}</a></i>,
+    {% else %}
+    <i>{{work.data.title}}</i>,
+    {% endif %}
+    <a href={{work.data.where-url}}>{{work.data.where}}</a>
+    {% if work.data.issue %}
+        , {{work.data.issue}}
+    {% endif %}
+    {% if work.data.upcoming %}
+        <i>(upcoming)</i>
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>
+
 <h3>2019</h3>
 
 <ul>
