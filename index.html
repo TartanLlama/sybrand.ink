@@ -30,6 +30,9 @@ layout: default.liquid
     {% if work.data.upcoming %}
         <i>(upcoming)</i>
     {% endif %}
+    {% if work.data.notes %}
+        <i>({{work.data.notes}})</i>
+    {% endif %}
     </li>
 {% endfor %}
 </ul>
@@ -52,6 +55,9 @@ layout: default.liquid
     {% endif %}
     {% if work.data.upcoming %}
         <i>(upcoming)</i>
+    {% endif %}
+    {% if work.data.notes %}
+        <i>({{work.data.notes}})</i>
     {% endif %}
     </li>
 {% endfor %}
