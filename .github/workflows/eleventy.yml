@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build
-        uses: TartanLlama/actions-eleventy@v1.1
+        uses: TartanLlama/actions-eleventy@v1.2
       - name: CNAME
         run: echo 'sybrand.ink' | sudo tee _site/CNAME
       - name: Deploy
