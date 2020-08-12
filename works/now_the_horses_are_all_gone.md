@@ -5,5 +5,5 @@ where: Perhappened
 where-url: https://www.perhappened.com/
 work-link: https://www.perhappened.com/nowthehorsessybrand.html
 tags: "20"
-issue: #1, Carnival
+issue: "#1, Carnival"
 ---
