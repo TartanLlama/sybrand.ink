@@ -11,6 +11,34 @@ layout: default.liquid
 
 <h2>Publications</h2>
 
+<h3>2021</h3>
+
+<ul>
+{% for work in collections.21 %}
+<li>
+    {% if work.data.here %}
+    <i><a href="{{work.url}}">{{work.data.title}}</a></i>,
+    {% elsif work.data.work-link %}
+    <i><a href="{{work.data.work-link}}">{{work.data.title}}</a></i>,
+    {% else %}
+    <i>{{work.data.title}}</i>,
+    {% endif %}
+    {% if work.data.issue %}
+      <a href={{work.data.where-url}}>{{work.data.where}}</a>, {{work.data.issue}}
+    {% else %}
+      <a href={{work.data.where-url}}>{{work.data.where}}</a>
+    {% else %}
+    {% endif %}
+    {% if work.data.upcoming %}
+        <i>(upcoming)</i>
+    {% endif %}
+    {% if work.data.notes %}
+        <i>({{work.data.notes}})</i>
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>
+
 <h3>2020</h3>
 
 <ul>
