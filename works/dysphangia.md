@@ -4,6 +4,6 @@ title: "Dysphangia"
 where: Blood Bath
 where-url: https://bloodbathlitzine.com/
 upcoming: true
-tags: "21"
+tags: "22"
 issue: "#3, VAMPIRES"
 ---
