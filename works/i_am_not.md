@@ -9,6 +9,7 @@ here: true
 
 *after John Clare*
 
+<pre>
 I am not yet what I am
 a memory lost, self-consumer
 in wire lightning, rise and vanish
@@ -23,3 +24,4 @@ ise stranger than      the rest I long
 for screams     smiled with my 
 
 Creator
+</pre>
