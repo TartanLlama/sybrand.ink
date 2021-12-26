@@ -24,9 +24,17 @@ layout: default.liquid
     <i>{{work.data.title}}</i>,
     {% endif %}
     {% if work.data.issue %}
+      {% if work.data.where-url %}
       <a href={{work.data.where-url}}>{{work.data.where}}</a>, {{work.data.issue}}
+      {% else %}
+      {{work.data.where}}, {{work.data.issue}}
+      {% endif %}
     {% else %}
+      {% if work.data.where-url %}
       <a href={{work.data.where-url}}>{{work.data.where}}</a>
+      {% else %}
+      {{work.data.where}}
+      {% endif %}
     {% else %}
     {% endif %}
     {% if work.data.upcoming %}
@@ -52,9 +60,17 @@ layout: default.liquid
     <i>{{work.data.title}}</i>,
     {% endif %}
     {% if work.data.issue %}
+      {% if work.data.where-url %}
       <a href={{work.data.where-url}}>{{work.data.where}}</a>, {{work.data.issue}}
+      {% else %}
+      {{work.data.where}}, {{work.data.issue}}
+      {% endif %}
     {% else %}
+      {% if work.data.where-url %}
       <a href={{work.data.where-url}}>{{work.data.where}}</a>
+      {% else %}
+      {{work.data.where}}
+      {% endif %}
     {% else %}
     {% endif %}
     {% if work.data.upcoming %}
@@ -80,9 +96,17 @@ layout: default.liquid
     <i>{{work.data.title}}</i>,
     {% endif %}
     {% if work.data.issue %}
+      {% if work.data.where-url %}
       <a href={{work.data.where-url}}>{{work.data.where}}</a>, {{work.data.issue}}
+      {% else %}
+      {{work.data.where}}, {{work.data.issue}}
+      {% endif %}
     {% else %}
+      {% if work.data.where-url %}
       <a href={{work.data.where-url}}>{{work.data.where}}</a>
+      {% else %}
+      {{work.data.where}}
+      {% endif %}
     {% else %}
     {% endif %}
     {% if work.data.upcoming %}
