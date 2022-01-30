@@ -3,7 +3,10 @@ layout: default.liquid
 ---
 
 <h1>{{title}}</h1>
+{% if where-url %}
 <h2 class="published">Published in <a href="{{where-url}}">{{where}}</a>
+{% else %}
+<h2 class="published">Published in  {{where}}
 {% if issue %}
 - {{issue}}
 {% endif %}
