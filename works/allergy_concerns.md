@@ -7,6 +7,7 @@ tags: "20"
 issue: #1
 ---
 
+<pre>
 We strive to provide a selection
 of products for our customers
 who have certain food allergies,
@@ -20,3 +21,4 @@ as the street lights stretch
 down through the diner windows
 and the last order bell rings
 rings rings rings rings rings
+</pre>
