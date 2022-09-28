@@ -7,6 +7,7 @@ tags: "20"
 issue: #1
 ---
 
+<pre>
 Got my genderfluid changed today.
 
 It was leaking out of my trouser leg, 
@@ -89,3 +90,4 @@ Pshhhhhhhhhhclunk screams
 Thankyouseeyounexttimebye
 
 Maybe I'll just switch to wearing skirts. 
+</pre>
